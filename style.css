@@ -124,3 +124,17 @@ footer {
     background-color: #34495e;
     color: #ecf0f1;
 }
+
+/* Construction Notice */
+.construction-notice {
+    background-color: #fcf8e3; /* Soft yellow */
+    color: #8a6d3b;           /* Dark text */
+    padding: 15px;
+    text-align: center;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #fbeed5;
+}
+
+.construction-notice p {
+    margin: 0;
+}
