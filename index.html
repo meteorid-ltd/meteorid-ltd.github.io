@@ -14,24 +14,32 @@
         <div class="container">
             <h1>meteorid ltd</h1>
             <p>Research & Development</p>
+
+            <button id="menu-toggle" class="menu-button">&#9776;</button>
         </div>
     </header>
-    
+        <nav id="main-nav" class="main-navigation">
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#partners">Partners</a></li>
+            </ul>
+        </nav>
 
     <main>
         <section class="hero">
             <div class="container">
                 <h2>Advancing the Science of Light and Energy</h2>
                 <p>
-                    <strong>Meteorid ltd </strong> is an USA based Research & Development firm specializing in 
+                    <strong>Meteorid ltd </strong> is a USA based Research & Development firm specializing in 
                     <strong>radiative transfer, machine learning</strong> and <strong>atmospheric science</strong>. We are dedicated to translating 
                     theoretical and technological developments into tangible advancements across various sectors.
                 </p>
                 <p>
-                    Our core mission is to engage in <strong>research</strong> and <strong>development activities</strong>, including, but not limited to,
-                    the field of <strong>radiative transfer</strong> and <strong>machine learning</strong>;
-                    To collaborate, and provide other related
-                    services, products, theoretical and technological developments.
+                    Our core mission is to engage in research and development activities, including, but not limited to,
+                    the field of radiative transfer and machine learning;
+                    To collaborate, and provide other related services, products, theoretical and technological developments.
                 </p>
                 <a href="mailto:milos.phy@gmail.com" class="cta-button">Inquire About Collaboration</a>
             </div>
@@ -48,6 +56,7 @@
                     <li>
                         <strong>Machine Learning Integration</strong>
                         <p>Utilizing advanced machine learning techniques to enhance predictive modeling and data analysis.</p>
+                    </li>
                     <li>
                         <strong>Collaborative Development</strong>
                         <p>Partnering with academia, government, and industry to deliver products and services.</p>
@@ -62,5 +71,16 @@
             <p>&copy; 2025 meteorid ltd. All rights reserved.</p>
         </div>
     </footer>
+<script>
+        // Get the button and the navigation
+        const menuButton = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        // Add a click listener to the button
+        menuButton.addEventListener('click', function() {
+            // Toggle the 'is-open' class on the navigation
+            mainNav.classList.toggle('is-open');
+        });
+</script>    
 </body>
 </html>

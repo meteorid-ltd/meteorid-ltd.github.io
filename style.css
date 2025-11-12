@@ -138,3 +138,75 @@ footer {
 .construction-notice p {
     margin: 0;
 }
+
+/* ================= */
+/* Navigation Styles */
+/* ================= */
+
+/* Position the header container for the button */
+header .container {
+    position: relative;
+}
+
+/* Menu Button Styles */
+.menu-button {
+    display: block; /* Show the button */
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%); /* Vertically center */
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: #ecf0f1; /* White to match header text */
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    color: #ddd;
+}
+
+/* Navigation Menu Styles */
+.main-navigation {
+    /* Hide by default */
+    max-height: 0;
+    overflow: hidden;
+    
+    /* Smooth transition */
+    transition: max-height 0.3s ease-out;
+    
+    background-color: #34495e; /* Dark blue, matches footer */
+    width: 100%;
+}
+
+/* This class is added by JavaScript */
+.main-navigation.is-open {
+    max-height: 300px; /* Animate open */
+}
+
+.main-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.main-navigation li {
+    border-bottom: 1px solid #4b6580;
+}
+
+.main-navigation li:last-child {
+    border-bottom: none;
+}
+
+.main-navigation a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #ecf0f1; /* White text */
+    font-weight: bold;
+}
+
+.main-navigation a:hover {
+    background-color: #1a5276; /* Darker blue, matches hero CTA */
+}
