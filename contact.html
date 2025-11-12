@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - meteorid ltd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1><a href="index.html">meteorid ltd</a></h1>
+            <p>Research & Development</p>
+            <button id="menu-toggle" class="menu-button">&#9776;</button>
+        </div>
+    </header>
+    
+    <nav id="main-nav" class="main-navigation">
+        <ul>
+            <li><a href="index.html">About Us</a></li> 
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#affiliations">Affiliations</a></li>
+            <li><a href="index.html#partners">Partners</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h3>Contact</h3>
+                <p>
+                    480 W Kanawha Ave<br>
+                    Columbus, Ohio   <br>
+                    43214
+                </p>
+                <p>
+                    <a href="mailto:milos.phy@gmail.com">milos.phy@gmail.com</a>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 meteorid ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        menuButton.addEventListener('click', function() {
+            mainNav.classList.toggle('is-open');
+        });
+    </script>    
+</body>
+</html>

@@ -210,3 +210,56 @@ header .container {
 .main-navigation a:hover {
     background-color: #1a5276; /* Darker blue, matches hero CTA */
 }
+
+/* ================= */
+/* Contact Section   */
+/* ================= */
+
+.contact-section {
+    background-color: #ffffff; /* A clean white background */
+    padding: 2.5rem 0;
+    text-align: center;
+    border-top: 2px solid #ddd; /* Separates from content above */
+    /* Add a minimum height to fill the screen better */
+    min-height: 50vh; 
+}
+
+.contact-section h3 {
+    font-size: 1.8rem;
+    color: #1a5276; /* Matches your other headings */
+    margin-bottom: 1.5rem;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0.5rem auto;
+}
+
+/* Styles the clickable email link */
+.contact-section a {
+    color: #1a5276; /* Uses your site's main accent color */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: #2c3e50; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* ================= */
+/* Header Link Fix   */
+/* ================= */
+
+/* This makes the <h1> link look like normal header text */
+header h1 a {
+    color: inherit; /* Inherits the white color from the header */
+    text-decoration: none; /* Removes the underline */
+}
+
+/* Optional: Add a hover effect */
+header h1 a:hover {
+    color: #ddd; /* Adds a subtle fade on hover */
+}
