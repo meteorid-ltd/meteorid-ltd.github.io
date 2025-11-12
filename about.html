@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - meteorid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1><a href="index.html">meteorid ltd</a></h1>
+            <p>Research & Development</p>
+            <button id="menu-toggle" class="menu-button">&#9776;</button>
+        </div>
+    </header>
+    
+    <nav id="main-nav" class="main-navigation">
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="affiliations.html">Affiliations</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="about-section">
+            <div class="container">
+                
+                <h3>Our Mission</h3>
+                <p><strong>meteorid ltd</strong> is a USA-based Research & Development firm specializing in <strong>radiative transfer, machine learning</strong>, and <strong>atmospheric science</strong>. We are dedicated to translating theoretical and technological developments into tangible advancements across various sectors.</p>
+                <p>Our core mission is to engage in R&D activities, providing innovative solutions, products, and theoretical insights to our partners.</p>
+
+                <hr class="section-divider">
+
+                <h3>About the Founder</h3>
+                
+                <p>
+                    <strong>Dr. Milos Sztipanov</strong> is the founder and lead scientist of meteorid ltd. 
+                    He is a physicist who specializes in radiative transfer, bringing a rigorous analytical approach to scientific inquiry.
+                    His expertise is in leveraging advanced computational tools—including <strong>Machine Learning, Python, FORTRAN, and high-performance computing</strong>—to translate abstract concepts into practical, innovative solutions. 
+                </p>
+                <p>
+                    In his recent role as a contract Physical Scientist at <strong>NOAA's National Weather Service (NCEP/EMC)</strong>, Dr. Sztipanov worked on improving the radiation scheme in the Unified Forecast System (UFS) weather models.
+                    His work included formulating and developing a <strong>novel method for calculating atmospheric heating rates</strong> and pioneering research on a neural network to replace gas optics in the physical model.
+                </p>
+                <p>
+                    Dr. Sztipanov earned his <strong>Ph.D. in physics from Stevens Institute of Technology</strong>, where his research focused on methods for retrieving ozone, cloud, and aerosol properties utilizing machine learning and ground-based measurements. 
+                    He holds a Bachelor's Degree in physics with a theoretical physics concentration from Eötvös Lóránd Science University (HUN). 
+                    He continues to contribute to the field as a <strong>Visiting Researcher at Stevens Institute of Technology</strong> and a <strong>Research Associate at the University of Maryland</strong>.
+                </p>
+                <p>
+                    His research has been published in numerous peer-reviewed journals, including the <strong><i>Journal of Advances in Modeling Earth Systems</i>, <i>Atmosphere</i>, <i>Optics Express</i>, and <i>Applied Optics</i></strong>.
+                </p>
+
+                <hr class="section-divider">
+
+                <h3>Our Approach</h3>
+                <p>We are founded on a commitment to scientific rigor and innovation. We believe in a collaborative model, working closely with partners in academia, government, and industry to bridge the gap between complex theory and practical, real-world application.</p>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 meteorid ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        menuButton.addEventListener('click', function() {
+            mainNav.classList.toggle('is-open');
+        });
+    </script>    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliations - meteorid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1><a href="index.html">meteorid ltd</a></h1>
+            <p>Research & Development</p>
+            <button id="menu-toggle" class="menu-button">&#9776;</button>
+        </div>
+    </header>
+    
+    <nav id="main-nav" class="main-navigation">
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="affiliations.html">Affiliations</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="affiliation-section">
+            <div class="container">
+                <h3>Affiliations</h3>
+                <p class="affiliation-intro">
+                    meteorid ltd operates within a strong network of academic and professional institutions. 
+                    These affiliations enable us to stay at the forefront of scientific research and 
+                    collaborate with leading experts in the field.
+                </p>
+
+                <h4>Current Research Affiliations</h4>
+                <ul class="affiliation-list">
+                    <li>
+                        <strong>Visiting Researcher</strong>
+                        <p>Stevens Institute of Technology, Hoboken, NJ</p>
+                        <p>Department of Physics</p>
+                    </li>
+                    <li>
+                        <strong>Research Associate</strong>
+                        <p>University of Maryland, College Park, MD</p>
+                    </li>
+                </ul>
+
+                <h4>Professional Societies</h4>
+                <ul class="affiliation-list">
+                    <li>
+                        <strong>American Meteorological Society (AMS)</strong>
+                        <strong>International Radiation Symposium (IRS) </strong>
+                        <p>Active participant and speaker at national and International meetings.</p>
+                        </li>
+                </ul>
+
+                <h4>Past Institutional Collaborations</h4>
+                <ul class="affiliation-list">
+                    <li>
+                        <strong>National Oceanic and Atmospheric Administration (NOAA)</strong>
+                        <p>National Weather Service</p>
+                        <p>Improving the radiation scheme in the Unified Forecast System (UFS) models.</p>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 meteorid ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        menuButton.addEventListener('click', function() {
+            mainNav.classList.toggle('is-open');
+        });
+    </script>    
+</body>
+</html>
