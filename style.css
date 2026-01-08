@@ -432,3 +432,57 @@ header h1 a:hover {
     color: #555;
 }
 
+/* --- Desktop Navigation (768px and wider) --- */
+@media (min-width: 768px) {
+    /* 1. Hide the hamburger button on desktop */
+    .menu-button {
+        display: none !important;
+    }
+
+    /* 2. Make the navigation always visible and clean up the container */
+    .main-navigation {
+        max-height: none !important;
+        overflow: visible !important;
+        background-color: #f8f9fa; /* Lighter color to separate it from the header */
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* 3. Turn the list into a horizontal flexbox row */
+    .main-navigation ul {
+        display: flex;
+        justify-content: center;
+        gap: 40px; /* Space between links */
+        padding: 10px 0;
+    }
+
+    /* 4. Reset list item borders and style the links */
+    .main-navigation li {
+        border-bottom: none;
+    }
+
+    .main-navigation a {
+        color: #2c3e50; /* Darker text for the light background */
+        padding: 5px 0;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+    }
+
+    /* 5. Add a nice underline hover effect */
+    .main-navigation a:hover {
+        background-color: transparent;
+        color: #1a5276;
+    }
+
+    .main-navigation a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #1a5276;
+        transition: width .3s;
+    }
+
+    .main-navigation a:hover::after {
+        width: 100%;
+    }
+}
